@@ -1,7 +1,5 @@
 import pickle
 import streamlit as st
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 # Aplikasi Streamlit
 st.title('Prediksi Kalori')
