@@ -16,7 +16,7 @@ if st.button('Prediksi'):
     #Memuat model dari file pickle
     loaded_model = pickle.load(open('regression_model.pkl', 'rb'))
     #Melakukan prediksi
-    input data = [[umur, bb, tb, olahraga]] 
+    input_data = [[umur, bb, tb, olahraga]] 
     prediction = loaded_model.predict(input_data)
 
     #Menampilkan hasil prediksi
