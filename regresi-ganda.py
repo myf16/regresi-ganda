@@ -15,6 +15,7 @@ olahraga = st.number_input('Durasi Olahraga (menit)', min_value=20, max_value=90
 if st.button('Prediksi'):
     #Memuat model dari file pickle
     loaded_model = pickle.load(open('regression_model.pkl', 'rb'))
+    
     #Melakukan prediksi
     input_data = [[umur, bb, tb, olahraga]] 
     prediction = loaded_model.predict(input_data)
